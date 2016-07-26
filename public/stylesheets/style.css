@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 20px;
+  font-family: 'PT Serif', serif;
 }
 
 a {
