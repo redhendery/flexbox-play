@@ -4,11 +4,15 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const compass = require('compass'),
+                express = require('express')();
 
 const routes = require('./routes/index');
 const users = require('./routes/users');
 
 const app = express();
+app.use(compass({ cwd: __dirname + 'public' }));
+app.use(express.static(__dirname + 'public'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
