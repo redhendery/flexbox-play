@@ -1,2 +1,1 @@
-# Dad_Website
-webpage for Alister Hendery
+# setup basic flexbox structure
